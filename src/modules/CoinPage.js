@@ -51,9 +51,10 @@ const CoinPage = () => {
             </div>
           </div>
         </div>
-        <div className={classes.description}>
-          <p>{coinInfo.description?.en}</p>
-        </div>
+        <div
+          className={classes.description}
+          dangerouslySetInnerHTML={{ __html: coinInfo.description?.en }}
+        ></div>
       </div>
     </div>
   );
